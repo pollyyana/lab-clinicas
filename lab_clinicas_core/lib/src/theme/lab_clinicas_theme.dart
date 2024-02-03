@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 final class LabClinicasTheme {
-  static const orangeColor = Color(0x0fffae45);
-  static const lightOrangeColor = Color(0xffffefe9);
+  static const orangeColor = Color(0xFFFFAE45);
+  static const lightOrangeColor = Color(0xFFFFEFE9);
   static const blueColor = Color(0xff01bdd6);
   static const lightGreyColor = Color(0xffffefe9);
 
