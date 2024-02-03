@@ -114,6 +114,7 @@ class _WhoIAmPageState extends State<WhoIAmPage> {
                             ),
                             SizedBox(
                               width: sizeOf.width * .8,
+                              height: 48,
                               child: ElevatedButton(
                                 onPressed: () {
                                   final valid =
