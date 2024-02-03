@@ -27,4 +27,8 @@ class SelfServiceController with MessageStateMixin {
     print(_model.name);
     print(_model.lastName);
   }
+
+  void clearForm() {
+    _model =_model.clear();
+  }
 }
