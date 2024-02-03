@@ -8,6 +8,7 @@ import 'package:lab_clinicas_self_service/src/binding/lab_clinicas_application_b
 import 'package:lab_clinicas_self_service/src/core/pages/splash_page/splash_page.dart';
 import 'package:lab_clinicas_self_service/src/modules/auth/auth_module.dart';
 import 'package:lab_clinicas_self_service/src/modules/home/home_module.dart';
+import 'package:lab_clinicas_self_service/src/modules/self_service/self_service_module.dart';
 
 void main() {
   runZonedGuarded(() {
@@ -33,7 +34,7 @@ class LabClinicasSelfServiceApp extends StatelessWidget {
           path: '/',
         )
       ],
-      modules: [AuthModule(), HomeModule()],
+      modules: [AuthModule(), HomeModule(),SelfServiceModule()],
     );
   }
 }
