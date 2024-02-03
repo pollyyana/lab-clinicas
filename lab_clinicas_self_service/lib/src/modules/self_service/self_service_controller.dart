@@ -1,33 +1,30 @@
-
 //? Etapas do formulario
 import 'package:lab_clinicas_core/lab_clinicas_core.dart';
+import 'package:lab_clinicas_self_service/src/model/self_service_model.dart';
 import 'package:signals_flutter/signals_flutter.dart';
 
 ///none = nenhum
 ///done = feito
-enum FormSteps{
-  none,
-  whoIAm,
-  findPatient,
-  patient,
-  documents,
-  done,
-  restart
+enum FormSteps { none, whoIAm, findPatient, patient, documents, done, restart }
 
-}
-
-class SelfServiceController with MessageStateMixin{
+class SelfServiceController with MessageStateMixin {
   //se inicia em lugar nenhum
-  final _step = ValueSignal(FormSteps.none);
-
-
+  final _step = ValueSignal(
+    FormSteps.none,
+  );
+  var _model = const SelfServiceModel();
   FormSteps get step => _step();
 
-  void startProcess(){
+  void startProcess() {
     _step.forceUpdate(FormSteps.whoIAm);
   }
 
-  void goPatient(){
-    _step.forceUpdate(FormSteps.patient);
+  void setWhoIAmDataStepAndNext(String name, String lastName) {
+    _model = _model.copyWith(name: () => name, lastName: () => lastName);
+    _step.forceUpdate(FormSteps.findPatient);
+  }
+  void debug (){
+    print(_model.name);
+    print(_model.lastName);
   }
 }
