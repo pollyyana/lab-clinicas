@@ -53,7 +53,9 @@ class _FindPatientPageState extends State<FindPatientPage> with MessageViewMixin
                   ),
                 ];
               },
-              onSelected: (value) async {},
+              onSelected: (value) async {
+               Injector.get<SelfServiceController>().restartProcess(); 
+              },
             ),
           ],
         ),
