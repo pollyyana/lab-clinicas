@@ -13,7 +13,10 @@ class SelfServiceController with MessageStateMixin {
   final _step = ValueSignal(
     FormSteps.none,
   );
+  
   var _model = const SelfServiceModel();
+
+  SelfServiceModel get model => _model;
   FormSteps get step => _step();
 
   void startProcess() {
@@ -30,10 +33,10 @@ class SelfServiceController with MessageStateMixin {
   // }
 
   void clearForm() {
-    _model =_model.clear();
+    _model = _model.clear();
   }
 
-  void goToFormPatience(PatientModel? patient){
+  void goToFormPatience(PatientModel? patient) {
     _model = _model.copyWith(patient: () => patient);
     _step.forceUpdate(FormSteps.patient);
   }

@@ -1,6 +1,7 @@
-class ServiceException implements Exception {
+class RepositoryException implements Exception {
   final String message;
 
-  ServiceException({this.message = ''});
+  RepositoryException({this.message = ''});
 
 }
+

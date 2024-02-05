@@ -7,6 +7,8 @@ class PatientAddressModel {
   PatientAddressModel({
     required this.cep,
     required this.streetAddress,
+    required this.number,
+    required this.addressComplement,
     required this.state,
     required this.city,
     required this.district,
@@ -15,6 +17,9 @@ class PatientAddressModel {
   final String cep;
   @JsonKey(name: 'street_address')
   final String streetAddress;
+  final String number;
+  @JsonKey(name: 'address_complement', defaultValue: '')
+  final String addressComplement;
   final String state;
   final String city;
   final String district;
