@@ -19,6 +19,6 @@ final class AuthInterceptors extends Interceptor {
     }
     handler.next(options);
 
-    super.onRequest(options, handler);
+    // super.onRequest(options, handler);
   }
 }
