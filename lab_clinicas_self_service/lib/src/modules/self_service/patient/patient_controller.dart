@@ -24,7 +24,7 @@ class PatientController with MessageStateMixin {
       case Left():
         showError('Erro ao atualizar dados do paciente, chame o atendente');
       case Right():
-        showInfo('Paciente atualizado com sucesso');
+        showSuccess('Paciente atualizado com sucesso');
         patient = model;
         goNextStep();
     }
@@ -36,7 +36,7 @@ class PatientController with MessageStateMixin {
       case Left():
         showError('Erro ao cadastrar paciente, chame o atendente');
       case Right(value: final patient):
-        showInfo('Paciente cadastrado com sucesso');
+        showSuccess('Paciente cadastrado com sucesso');
         this.patient = patient;
         goNextStep();
     }

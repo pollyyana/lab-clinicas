@@ -21,6 +21,7 @@ void main() {
     runApp(const LabClinicasSelfServiceApp());
   }, (error, stack) {
     log('Erro não tratado', error: error, stackTrace: stack);
+    throw error;
   });
 }
 
