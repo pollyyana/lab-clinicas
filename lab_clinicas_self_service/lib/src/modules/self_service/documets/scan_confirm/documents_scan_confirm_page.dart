@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:camera/camera.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
@@ -7,17 +6,22 @@ import 'package:flutter_getit/flutter_getit.dart';
 import 'package:lab_clinicas_core/lab_clinicas_core.dart';
 import 'package:lab_clinicas_self_service/src/modules/self_service/documets/scan_confirm/documents_scan_confirm_controller.dart';
 import 'package:lab_clinicas_self_service/src/modules/self_service/widget/lab_clinicas_self_service_app_bar.dart';
+import 'package:signals_flutter/signals_flutter.dart';
 
 class DocumentsScanConfirmPage extends StatelessWidget {
+  final controller = Injector.get<DocumentsScanConfirmController>();
 
-  final controller = Injector.get <DocumentsScanConfirmController>();
-
-   DocumentsScanConfirmPage({super.key});
+  DocumentsScanConfirmPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     final sizeOf = MediaQuery.sizeOf(context);
     final foto = ModalRoute.of(context)!.settings.arguments as XFile;
+
+    controller.pathRemoteStorage.listen(context, (){
+      Navigator.of(context).pop();
+      Navigator.of(context).pop(controller.pathRemoteStorage.value);
+    });
 
     return Scaffold(
       appBar: LabClinicasSelfServiceAppBar(),
@@ -85,7 +89,13 @@ class DocumentsScanConfirmPage extends StatelessWidget {
                         child: SizedBox(
                       height: 48,
                       child: ElevatedButton(
-                          onPressed: () {}, child: const Text('SALVAR')),
+                        onPressed: () async {
+                          final imageBytes = await foto.readAsBytes();
+                          final filename = foto.name;
+                          await controller.uploadImage(imageBytes, filename);
+                        },
+                        child: const Text('SALVAR'),
+                      ),
                     ))
                   ],
                 )

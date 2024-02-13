@@ -128,6 +128,9 @@ class _DocumentsPageState extends State<DocumentsPage> with MessageViewMixin {
                                 fixedSize: const Size.fromHeight(48)),
                             onPressed: () {
                               selfServiceController.clearDocuments();
+                              setState(() {
+                                
+                              });
                             },
                             child: const Text('REMOVER TODAS'),
                           ),
@@ -140,7 +143,10 @@ class _DocumentsPageState extends State<DocumentsPage> with MessageViewMixin {
                             style: ElevatedButton.styleFrom(
                                 backgroundColor: LabClinicasTheme.orangeColor,
                                 fixedSize: const Size.fromHeight(48)),
-                            onPressed: () {},
+                            onPressed: () async {
+                              // Navigator.of(context).pushNamed('/self-service/done');
+                              await selfServiceController.finalize();
+                            },
                             child: const Text('FINALIZAR'),
                           ),
                         )
