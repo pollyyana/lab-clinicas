@@ -73,7 +73,7 @@ mixin MessageViewMixin<T extends StatefulWidget> on State<T> {
         case MessageStateMixin(: final infoMessage?):
           Messages.showInfo(infoMessage,context);
         case MessageStateMixin(: final succesMessage?):
-          Messages.showSuccess(succesMessage, context);
+          Messages.showError(succesMessage, context);
       }
     });
   }
