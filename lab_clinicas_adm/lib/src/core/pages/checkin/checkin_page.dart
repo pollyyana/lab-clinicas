@@ -191,7 +191,7 @@ class _CheckinPageState extends State<CheckinPage> with MessageViewMixin {
                         // Navigator.of(context).pushReplacementNamed('/checkin',
                         //     arguments: controller.informationForm);
                       },
-                      child: const Text('AFINALIZAR ATENDIMENT')),
+                      child: const Text('AFINALIZAR ATENDIMENTO')),
                 )
               ],
             ),
