@@ -21,13 +21,22 @@ class _CheckinPageState extends State<CheckinPage> with MessageViewMixin {
   @override
   void initState() {
     messageListener(controller);
+    effect(() {
+      if (controller.endProcess()) {
+        Navigator.of(context).pushReplacementNamed('/end-checkin');
+      }
+    });
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    final PatientInformationFormModel(:password, :patient) =
-        controller.informationForm.watch(context)!;
+    final PatientInformationFormModel(
+      :password,
+      :patient,
+      :medicalOrders,
+      :healthInsuranceCard
+    ) = controller.informationForm.watch(context)!;
 
     return Scaffold(
       appBar: LabClinicasAppBar(),
@@ -155,17 +164,19 @@ class _CheckinPageState extends State<CheckinPage> with MessageViewMixin {
                 const SizedBox(
                   height: 24,
                 ),
-                const Row(
+                Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    CheckinImageLink(label: 'Carterinha'),
+                    CheckinImageLink(
+                      label: 'Carterinha',
+                      image: healthInsuranceCard,
+                    ),
                     Column(
                       children: [
-                        CheckinImageLink(label: 'Pedido medico 1'),
-                        CheckinImageLink(label: 'Pedido medico 2'),
-                        CheckinImageLink(label: 'Pedido medico 3'),
+                        for(final (index, medicalOrders) in medicalOrders.indexed)
+                          CheckinImageLink(label: 'Pedido medico ${index +1}', image: medicalOrders,),
                       ],
-                    )
+                    ),
                   ],
                 ),
                 const SizedBox(
@@ -176,8 +187,9 @@ class _CheckinPageState extends State<CheckinPage> with MessageViewMixin {
                   height: 48,
                   child: ElevatedButton(
                       onPressed: () {
-                        Navigator.of(context).pushReplacementNamed('/checkin',
-                            arguments: controller.informationForm);
+                        controller.endCheckin();
+                        // Navigator.of(context).pushReplacementNamed('/checkin',
+                        //     arguments: controller.informationForm);
                       },
                       child: const Text('AFINALIZAR ATENDIMENTO')),
                 )
