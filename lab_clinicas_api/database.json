@@ -1,1 +1,135 @@
-{"users":[{"id":"627ef7c0-62da-1e8a-a8c8-117da032f9ac","email":"at1@gmail.com","password":"123123"},{"id":"a288ae70-62f7-1e8a-a8c8-117da032f9ac","email":"at1@gmail.com","password":"123123"}],"adm_users":[{"id":"4c6ea580-6888-1e8a-a8c8-117da032f9ac","email":"terminal1@gmail.com","password":"123123"}],"attendantDeskAssignment":[{"id":"5fce2fc0-30c3-1ed1-94f3-7d3cf9dec13c","user_id":"627ef7c0-62da-1e8a-a8c8-117da032f9ac","desk_number":1,"date_created":"2024-02-22T19:07:13.876609","status":"Available"}],"patients":[{"id":"cc62fe00-a3a8-1e96-9f94-c55d48c946c0","name":"vini","email":"rodrigorahman@academiadoflutter.com.br","phone_number":"(11) 1231212312","document":"123.123.123-12","address":{"cep":"09190390","street_address":"Rua X","number":"51","address_complement":"a","state":"SP","city":"Santo André","district":"Jardins"},"guardian":"","guardian_identification_number":""},{"id":"03039430-2fb8-1ed1-94f3-7d3cf9dec13c","name":"lua","email":"lu@gmail.com","phone_number":"(00) 0000-0000","document":"000.000.000-90","address":{"cep":"77.777-777","street_address":"endereco aqio","number":"23","address_complement":"cpm","state":"DF","city":"aqui","district":"EW"},"guardian":"zola","guardian_identification_number":""}],"patientInformationForm":[{"id":"fc59f5b0-b5ce-1eb2-b8da-31da6b21aef0","patient_id":"cc62fe00-a3a8-1e96-9f94-c55d48c946c0","health_insurance_card":"/storage/ewdjavlw_jrs_1707781641192.jpg","medical_order":["/storage/lncwonnt_jrs_1707781661995.jpg","/storage/pvwakjrz_jrs_1707781672444.jpg"],"password":"ponto polly","date_created":"2024-02-12T20:48:09.725334","status":"Being Attended","tests":[]},{"id":"fc59f5b0-b5ce-1eb2-b8da-31da6b21aef01","patient_id":"cc62fe00-a3a8-1e96-9f94-c55d48c946c0","health_insurance_card":"/storage/ewdjavlw_jrs_1707781641192.jpg","medical_order":["/storage/lncwonnt_jrs_1707781661995.jpg","/storage/pvwakjrz_jrs_1707781672444.jpg"],"password":"Vinicius","date_created":"2024-02-12T20:48:09.725334","status":"Being Attended","tests":[]},{"id":"fc59f5b0-b5ce-1eb2-b8da-31da6b21aef02","patient_id":"cc62fe00-a3a8-1e96-9f94-c55d48c946c0","health_insurance_card":"/storage/ewdjavlw_jrs_1707781641192.jpg","medical_order":["/storage/lncwonnt_jrs_1707781661995.jpg","/storage/pvwakjrz_jrs_1707781672444.jpg"],"password":"pollyana","date_created":"2024-02-12T20:48:09.725334","status":"Checked In","tests":[]},{"id":"22361ac0-2ff5-1ed1-94f3-7d3cf9dec13c","patient_id":"03039430-2fb8-1ed1-94f3-7d3cf9dec13c","health_insurance_card":"/storage/dusinuwi_jrs_1708639534215.jpg","medical_order":["/storage/sadonqkb_jrs_1708639543779.jpg"],"password":"lua teste","date_created":"2024-02-22T19:05:44.293638","status":"Being Attended","tests":[]}],"painelCheckin":[{"id":"20839fa0-7e4d-1ebb-818a-bf328d61dfb5","password":"ponto polly","time_called":"2024-02-15T17:28:34.334060","attendant_desk":13},{"id":"8e0707f0-8100-1ebb-8dcc-cd7ff047f924","password":"ponto polly","time_called":"2024-02-15T17:33:31.294286","attendant_desk":13},{"id":"2dca56c0-810b-1ebb-8dcc-cd7ff047f924","password":"Vinicius","time_called":"2024-02-15T17:33:35.863686","attendant_desk":13},{"id":"5512f420-8125-1ebb-8dcc-cd7ff047f924","password":"pollyana","time_called":"2024-02-15T17:33:47.095195","attendant_desk":13},{"id":"4f284250-87aa-1ebb-adda-776f621b2fc4","password":"ponto polly","time_called":"2024-02-15T17:45:43.908833","attendant_desk":3},{"id":"21bdcef0-87b1-1ebb-adda-776f621b2fc4","password":"Vinicius","time_called":"2024-02-15T17:45:46.846302","attendant_desk":3},{"id":"53c41090-87b5-1ebb-adda-776f621b2fc4","password":"pollyana","time_called":"2024-02-15T17:45:48.649043","attendant_desk":3},{"id":"94d35260-a297-1ebb-875e-6ff4765f69fc","password":"ponto polly","time_called":"2024-02-15T18:35:04.554136","attendant_desk":5},{"id":"cf5a31a0-7e20-1ebc-8387-9bce998067c0","password":"ponto polly","time_called":"2024-02-16T01:17:22.794320","attendant_desk":2},{"id":"0875fab0-875d-1ebc-8387-9bce998067c0","password":"Vinicius","time_called":"2024-02-16T01:34:18.225139","attendant_desk":3},{"id":"e792f970-935e-1ebc-9f82-03c2cdbfec24","password":"pollyana","time_called":"2024-02-16T01:56:18.440081","attendant_desk":5},{"id":"80142dd0-95fe-1ebc-987d-0be65c40deb2","password":"Vinicius","time_called":"2024-02-16T02:01:06.890145","attendant_desk":8},{"id":"74cb8e90-a2c0-1ebc-987d-0be65c40deb2","password":"pollyana","time_called":"2024-02-16T02:24:29.608692","attendant_desk":7},{"id":"7e73bbc0-a3c9-1ebc-a96f-e12a56d90d3f","password":"ponto polly","time_called":"2024-02-16T02:26:23.428496","attendant_desk":8},{"id":"dcf07600-a3d5-1ebc-a96f-e12a56d90d3f","password":"Vinicius","time_called":"2024-02-16T02:26:28.751738","attendant_desk":8},{"id":"187b8030-a3e4-1ebc-a96f-e12a56d90d3f","password":"pollyana","time_called":"2024-02-16T02:26:34.864151","attendant_desk":8},{"id":"8c12b330-a883-1ebc-a3b9-25ade5dd46f2","password":"ponto polly","time_called":"2024-02-16T02:35:03.128919","attendant_desk":6},{"id":"a735d760-a891-1ebc-a3b9-25ade5dd46f2","password":"Vinicius","time_called":"2024-02-16T02:35:09.212993","attendant_desk":6},{"id":"589c3cc0-a8a0-1ebc-a3b9-25ade5dd46f2","password":"pollyana","time_called":"2024-02-16T02:35:15.518067","attendant_desk":6},{"id":"a02410d0-30c3-1ed1-94f3-7d3cf9dec13c","password":"lua teste","time_called":"2024-02-22T19:07:13.987851","attendant_desk":1}],"tests":[{"id":"3b2526a7-96ad-4884-8d89-aac3a8f8d1e1","name":"Endoscopia"},{"id":"89b5ecf8-dcdd-42fd-b1ec-335537b661cc","name":"Exame de Sangue"},{"id":"4c7c2c0e-84fa-4b91-aff1-f8f9a99b4925","name":"Ressonância Magnética"},{"id":"49d4cb2e-afd5-4345-ac03-92ec451c0601","name":"Tomografia Computadorizada"},{"id":"0c4f178f-8b57-4f03-bbd5-5463e228d810","name":"Ultrassonografia"},{"id":"56ec8065-417f-4082-bcb5-1900b504c78d","name":"Eletrocardiograma"},{"id":"fb685fbd-853e-49f2-8a55-1086d08db53e","name":"Raio-X"},{"id":"93d3d43a-2f14-4d00-984b-d46f35c76142","name":"Colonoscopia"},{"id":"957a344b-ec07-4023-8e51-1adfa4e62a05","name":"Teste de Esforço"},{"id":"98b881bc-67cf-4e10-adca-17a1f59d798e","name":"Biopsia"},{"id":"9a4a3733-50cf-47ca-a671-2fbadd319d5b","name":"Eletroencefalograma"},{"id":"222fd2b7-af4e-42e2-8f08-069cbcd0f728","name":"Exame de Urina"},{"id":"590f8160-7920-40f7-9f44-cc6d42dff46d","name":"Holter 24 Horas"},{"id":"c71c2048-0cb8-49a2-a4f2-3b0dcdee6dd6","name":"Mamografia"},{"id":"05a0f0fb-6202-420a-8644-a1c1772c9da6","name":"Densitometria Óssea"},{"id":"2b029e96-eb37-43ad-8475-2d5cd273ef7e","name":"Teste de Gravidez"},{"id":"c0537924-ef52-43f9-8819-1f2a730eb5b7","name":"Teste de Glicemia"},{"id":"0fb498bd-2a27-4c23-9cf4-87b8a633d218","name":"Esprometria"},{"id":"67397c75-6ec4-4699-b52c-dadeb44b4734","name":"Audiometria"},{"id":"09835021-acc2-4792-a167-46d067de7406","name":"Exame de Vista"}]}
+{
+    "users": [
+        {
+            "id": "627ef7c0-62da-1e8a-a8c8-117da032f9ac",
+            "email": "at1@gmail.com",
+            "password": "123123"
+        },
+        {
+            "id": "a288ae70-62f7-1e8a-a8c8-117da032f9ac",
+            "email": "at1@gmail.com",
+            "password": "123123"
+        }
+    ],
+    "adm_users": [
+        {
+            "id": "4c6ea580-6888-1e8a-a8c8-117da032f9ac",
+            "email": "terminal1@gmail.com",
+            "password": "123123"
+        }
+    ],
+    "attendantDeskAssignment": [
+        {
+            "id": "5fce2fc0-30c3-1ed1-94f3-7d3cf9dec13c",
+            "user_id": "627ef7c0-62da-1e8a-a8c8-117da032f9ac",
+            "desk_number": 1,
+            "date_created": "2024-02-22T19:07:13.876609",
+            "status": "Available"
+        }
+    ],
+    "patients": [
+        {
+            "id": "cc62fe00-a3a8-1e96-9f94-c55d48c946c0",
+            "name": "vini",
+            "email": "rodrigorahman@academiadoflutter.com.br",
+            "phone_number": "(11) 1231212312",
+            "document": "123.123.123-12",
+            "address": {
+                "cep": "09190390",
+                "street_address": "Rua X",
+                "number": "51",
+                "address_complement": "a",
+                "state": "SP",
+                "city": "Santo André",
+                "district": "Jardins"
+            },
+            "guardian": "",
+            "guardian_identification_number": ""
+        }
+
+    ],
+    "patientInformationForm": [],
+    "painelCheckin": [],
+    "tests": [
+        {
+            "id": "3b2526a7-96ad-4884-8d89-aac3a8f8d1e1",
+            "name": "Endoscopia"
+        },
+        {
+            "id": "89b5ecf8-dcdd-42fd-b1ec-335537b661cc",
+            "name": "Exame de Sangue"
+        },
+        {
+            "id": "4c7c2c0e-84fa-4b91-aff1-f8f9a99b4925",
+            "name": "Ressonância Magnética"
+        },
+        {
+            "id": "49d4cb2e-afd5-4345-ac03-92ec451c0601",
+            "name": "Tomografia Computadorizada"
+        },
+        {
+            "id": "0c4f178f-8b57-4f03-bbd5-5463e228d810",
+            "name": "Ultrassonografia"
+        },
+        {
+            "id": "56ec8065-417f-4082-bcb5-1900b504c78d",
+            "name": "Eletrocardiograma"
+        },
+        {
+            "id": "fb685fbd-853e-49f2-8a55-1086d08db53e",
+            "name": "Raio-X"
+        },
+        {
+            "id": "93d3d43a-2f14-4d00-984b-d46f35c76142",
+            "name": "Colonoscopia"
+        },
+        {
+            "id": "957a344b-ec07-4023-8e51-1adfa4e62a05",
+            "name": "Teste de Esforço"
+        },
+        {
+            "id": "98b881bc-67cf-4e10-adca-17a1f59d798e",
+            "name": "Biopsia"
+        },
+        {
+            "id": "9a4a3733-50cf-47ca-a671-2fbadd319d5b",
+            "name": "Eletroencefalograma"
+        },
+        {
+            "id": "222fd2b7-af4e-42e2-8f08-069cbcd0f728",
+            "name": "Exame de Urina"
+        },
+        {
+            "id": "590f8160-7920-40f7-9f44-cc6d42dff46d",
+            "name": "Holter 24 Horas"
+        },
+        {
+            "id": "c71c2048-0cb8-49a2-a4f2-3b0dcdee6dd6",
+            "name": "Mamografia"
+        },
+        {
+            "id": "05a0f0fb-6202-420a-8644-a1c1772c9da6",
+            "name": "Densitometria Óssea"
+        },
+        {
+            "id": "2b029e96-eb37-43ad-8475-2d5cd273ef7e",
+            "name": "Teste de Gravidez"
+        },
+        {
+            "id": "c0537924-ef52-43f9-8819-1f2a730eb5b7",
+            "name": "Teste de Glicemia"
+        },
+        {
+            "id": "0fb498bd-2a27-4c23-9cf4-87b8a633d218",
+            "name": "Esprometria"
+        },
+        {
+            "id": "67397c75-6ec4-4699-b52c-dadeb44b4734",
+            "name": "Audiometria"
+        },
+        {
+            "id": "09835021-acc2-4792-a167-46d067de7406",
+            "name": "Exame de Vista"
+        }
+    ]
+}
